@@ -1,4 +1,4 @@
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  1
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -17,7 +17,6 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00006 ;  (c) Copyright 1999-2011 Microchip Technology, All rights reserved
                       00007 ;==========================================================================
                       00008 
-Message[301]: MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
                       00789         LIST
                       00006 
   00000020            00007 count EQU 0x20
@@ -57,13 +56,13 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0019   0820           00039         MOVF count, 0
 001A   3A0C           00040         XORLW 0x0C
 001B   1903           00041         BTFSC STATUS, 2
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  2
+001C   2836           00042         GOTO endword
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-001C   2836           00042         GOTO endword
 001D   0820           00043         MOVF count, 0
 001E   2814           00044         GOTO loop
                       00045 
@@ -116,7 +115,7 @@ Message[305]: Using default destination of 1 (file).
 003F   0009           00089         RETFIE
                       00090 
                       00091         END
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  3
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  3
 
 
 SYMBOL TABLE
@@ -175,7 +174,7 @@ BRG6                              00000006
 BRG7                              00000007
 BRG8                              00000000
 BRG9                              00000001
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  4
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  4
 
 
 SYMBOL TABLE
@@ -234,7 +233,7 @@ CHS2                              00000004
 CHS3                              00000005
 CKE                               00000006
 CKP                               00000004
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  5
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  5
 
 
 SYMBOL TABLE
@@ -293,7 +292,7 @@ IOCB0                             00000000
 IOCB1                             00000001
 IOCB2                             00000002
 IOCB3                             00000003
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  6
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  6
 
 
 SYMBOL TABLE
@@ -352,7 +351,7 @@ PDC2                              00000002
 PDC3                              00000003
 PDC4                              00000004
 PDC5                              00000005
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  7
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  7
 
 
 SYMBOL TABLE
@@ -411,7 +410,7 @@ RC4                               00000004
 RC5                               00000005
 RC6                               00000006
 RC7                               00000007
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  8
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  8
 
 
 SYMBOL TABLE
@@ -470,7 +469,7 @@ SSPIE                             00000003
 SSPIF                             00000003
 SSPM0                             00000000
 SSPM1                             00000001
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE  9
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE  9
 
 
 SYMBOL TABLE
@@ -529,7 +528,7 @@ TRISA1                            00000001
 TRISA2                            00000002
 TRISA3                            00000003
 TRISA4                            00000004
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE 10
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE 10
 
 
 SYMBOL TABLE
@@ -588,7 +587,7 @@ TXSTA                             00000098
 UA                                00000001
 ULPWUE                            00000005
 ULPWUIE                           00000002
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE 11
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE 11
 
 
 SYMBOL TABLE
@@ -647,7 +646,7 @@ _EXTRC                            00003FFF
 _EXTRCIO                          00003FFE
 _EXTRC_OSC_CLKOUT                 00003FFF
 _EXTRC_OSC_NOCLKOUT               00003FFE
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE 12
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE 12
 
 
 SYMBOL TABLE
@@ -680,7 +679,7 @@ _WRT_256                          00003DFF
 _WRT_HALF                         000039FF
 _WRT_OFF                          00003FFF
 _XT_OSC                           00003FF9
-__16F877A                         00000001
+__16F887                          00000001
 count                             00000020
 count10                           00000023
 del1                              00000021
@@ -694,7 +693,7 @@ loop                              00000014
 loop1                             0000002E
 loop2                             00000030
 main                              00000005
-MPASM  5.40                          MAIN.ASM   6-11-2017  15:21:02         PAGE 13
+MPASM  5.40                          MAIN.ASM   6-11-2017  16:00:38         PAGE 13
 
 
 MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
@@ -710,6 +709,6 @@ Program Memory Words Free:  8131
 
 Errors   :     0
 Warnings :     0 reported,     0 suppressed
-Messages :     6 reported,     0 suppressed
+Messages :     5 reported,     0 suppressed
 
 

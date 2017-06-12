@@ -1,4 +1,3 @@
-Message[301] C:\USERS\KEVIN\DOCUMENTS\2016-2017\PIC\PROPELLERCLOCK\P16F887.INC 33 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
 Message[302] C:\USERS\KEVIN\DOCUMENTS\2016-2017\PIC\PROPELLERCLOCK\MAIN.ASM 19 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] C:\USERS\KEVIN\DOCUMENTS\2016-2017\PIC\PROPELLERCLOCK\MAIN.ASM 21 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[305] C:\USERS\KEVIN\DOCUMENTS\2016-2017\PIC\PROPELLERCLOCK\MAIN.ASM 69 : Using default destination of 1 (file).
